@@ -1,7 +1,7 @@
 package com.mcb.imddd.pay.application.manager;
 
 import com.mcb.imddd.pay.application.command.TransferCommand;
-import com.mcb.imddd.pay.application.dto.PaymentDTO;
+import com.mcb.imddd.pay.interfaces.dto.TransferRespDTO;
 import com.mcb.imddd.pay.domain.event.DomainEventPublisher;
 import com.mcb.imddd.pay.domain.event.PaymentCreateEvent;
 import com.mcb.imddd.pay.domain.model.aggregate.AccountAggre;
@@ -26,7 +26,7 @@ public class PaymentManager {
     private DomainEventPublisher<PaymentCreateEvent> domainEventPublisher;
 
     @Transactional(rollbackFor = Exception.class)
-    public PaymentDTO transfer(TransferCommand transferCommand) {
+    public TransferRespDTO transfer(TransferCommand transferCommand) {
         AccountAggre payAccountAggre = accountService.findByAccountNo(transferCommand.getPayAccountNo());
         AccountAggre revAccountAggre = accountService.findByAccountNo(transferCommand.getRevAccountNo());
 

@@ -2,7 +2,7 @@ package com.mcb.imddd.pay.domain.factory;
 
 import com.mcb.imddd.pay.domain.model.aggregate.PaymentAggre;
 import com.mcb.imddd.pay.domain.model.valueobject.PaymentStatus;
-import com.mcb.imddd.pay.infrastructure.persistence.entity.PaymentPO;
+import com.mcb.imddd.pay.infrastructure.persistence.po.PaymentPO;
 
 import java.util.UUID;
 

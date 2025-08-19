@@ -4,11 +4,9 @@ import com.mcb.imddd.pay.domain.base.Aggregate;
 import com.mcb.imddd.pay.domain.model.entity.Payment;
 import com.mcb.imddd.pay.domain.model.valueobject.Amount;
 import com.mcb.imddd.pay.domain.repository.PaymentRepository;
-import com.mcb.imddd.pay.infrastructure.persistence.entity.PaymentPO;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
 public class PaymentAggre implements Aggregate<PaymentAggre> {
 

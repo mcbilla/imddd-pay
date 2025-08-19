@@ -6,7 +6,7 @@ import com.mcb.imddd.pay.domain.factory.PaymentFactory;
 import com.mcb.imddd.pay.domain.model.aggregate.PaymentAggre;
 import com.mcb.imddd.pay.domain.model.entity.Payment;
 import com.mcb.imddd.pay.domain.repository.PaymentRepository;
-import com.mcb.imddd.pay.infrastructure.persistence.entity.PaymentPO;
+import com.mcb.imddd.pay.infrastructure.persistence.po.PaymentPO;
 import com.mcb.imddd.pay.infrastructure.persistence.mapper.PaymentMapper;
 import com.mcb.imddd.pay.infrastructure.util.PaymentConverter;
 import org.springframework.stereotype.Repository;

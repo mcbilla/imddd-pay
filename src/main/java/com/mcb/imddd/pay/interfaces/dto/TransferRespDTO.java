@@ -1,10 +1,10 @@
-package com.mcb.imddd.pay.application.dto;
+package com.mcb.imddd.pay.interfaces.dto;
 
-public class PaymentDTO {
+public class TransferRespDTO {
 
     private String payNo;
 
-    public PaymentDTO(String payNo) {
+    public TransferRespDTO(String payNo) {
         this.payNo = payNo;
     }
 

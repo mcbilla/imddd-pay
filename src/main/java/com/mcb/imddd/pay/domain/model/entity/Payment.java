@@ -1,12 +1,8 @@
 package com.mcb.imddd.pay.domain.model.entity;
 
 import com.mcb.imddd.pay.domain.base.Entity;
-import com.mcb.imddd.pay.domain.model.aggregate.PaymentAggre;
 import com.mcb.imddd.pay.domain.model.valueobject.Amount;
 import com.mcb.imddd.pay.domain.model.valueobject.PaymentStatus;
-import com.mcb.imddd.pay.infrastructure.persistence.entity.PaymentPO;
-
-import java.util.UUID;
 
 public class Payment implements Entity<Payment> {
 

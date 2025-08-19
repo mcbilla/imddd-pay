@@ -1,4 +1,4 @@
-package com.mcb.imddd.pay.infrastructure.persistence.entity;
+package com.mcb.imddd.pay.infrastructure.persistence.po;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 

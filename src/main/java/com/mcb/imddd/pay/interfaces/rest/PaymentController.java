@@ -1,7 +1,7 @@
-package com.mcb.imddd.pay.api;
+package com.mcb.imddd.pay.interfaces.rest;
 
 import com.mcb.imddd.pay.application.command.TransferCommand;
-import com.mcb.imddd.pay.application.dto.PaymentDTO;
+import com.mcb.imddd.pay.interfaces.dto.TransferRespDTO;
 import com.mcb.imddd.pay.application.manager.PaymentManager;
 import com.mcb.imddd.pay.infrastructure.common.Result;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +21,8 @@ public class PaymentController {
     private PaymentManager paymentManager;
 
     @PostMapping("/transfer")
-    public Result<PaymentDTO> transfer(HttpServletRequest request, HttpServletResponse response, @RequestBody TransferCommand transferCommand) {
-        PaymentDTO paymentDTO = paymentManager.transfer(transferCommand);
+    public Result<TransferRespDTO> transfer(HttpServletRequest request, HttpServletResponse response, @RequestBody TransferCommand transferCommand) {
+        TransferRespDTO paymentDTO = paymentManager.transfer(transferCommand);
         return Result.ok(paymentDTO);
     }
 }
