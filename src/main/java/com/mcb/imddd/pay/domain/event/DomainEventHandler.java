@@ -1,4 +1,6 @@
-package com.mcb.imddd.pay.domain.base;
+package com.mcb.imddd.pay.domain.event;
+
+import com.mcb.imddd.pay.domain.base.DomainEvent;
 
 public interface DomainEventHandler<T extends DomainEvent> {
 

@@ -1,7 +1,6 @@
 package com.mcb.imddd.pay.domain.event;
 
 import com.mcb.imddd.pay.domain.base.DomainEvent;
-import com.mcb.imddd.pay.domain.base.DomainEventHandler;
 import com.mcb.imddd.pay.domain.model.aggregate.DirectAggre;
 import com.mcb.imddd.pay.domain.model.aggregate.PaymentAggre;
 import com.mcb.imddd.pay.domain.service.DirectService;
@@ -10,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class DirectHandler implements DomainEventHandler<DomainEvent> {
+public class PaymentCreateHandler implements DomainEventHandler<DomainEvent> {
 
     @Autowired
     private PaymentService paymentService;
